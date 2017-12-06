@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="css/style_index.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Overpass|Patrick+Hand|Roboto+Condensed|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Indie+Flower|Kalam|Overpass|Patrick+Hand|Roboto+Condensed|Satisfy" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="js/script.js"></script>
 </head>
@@ -13,15 +14,15 @@
     <header>
         <nav>
             <ul>
+                <a href="#final"><li>Información</li></a>
                 <a href="#"><li>Postres</li></a>
-                <a href="#"><li>Mariscos</li></a>
                 <a href="#"><li>Vegetariana</li></a>
             </ul>
             <a href="#"><h1>Recetas2</h1></a> 
             <ul>
-                <a href="#"><li>Bebidas</li></a>
-                <a href="#"><li>Chatarra</li></a>
-                <a href="#"><li>Carnes rojas</li></a>
+                <a href="bebidas.html"><li>Bebidas</li></a>
+                <a href="#"><li>Comida Rápida</li></a>
+                <a href="#sec_info"><li>Nosotros</li></a>
             </ul>
         </nav>
     </header>
@@ -29,31 +30,70 @@
     </section>
     <p id="barriga">Barriga llena, corazón contento</p>
     <section id="acces">
-        <a href="#">
+        <a href="bebidas.html">
             <div class="accesos">
-                <img src="imagenes/1.jpg" alt="" class="img" > 
+                <img src="imagenes/1_1.jpg" alt="" class="img" > 
                 <p class="descripcion">Bellini</p>
             </div>
         </a> 
         <a href="#">
             <div class="accesos">
-                <img src="imagenes/2.jpg" alt="" class="img">
+                <img src="imagenes/2_2.jpg" alt="" class="img">
                 <p class="descripcion">Galletas de Chocolate</p>
             </div>
         </a> 
         <a href="#">
             <div class="accesos">
-                <img src="imagenes/3.jpg" alt="" class="img">
+                <img src="imagenes/3_3.jpg" alt="" class="img">
                 <p class="descripcion">Sandwich de carne</p>
             </div>
         </a> 
     </section>
     <div id="parallax">
     </div>
-    <p>aquí va el código php para el formulario</p>
-    <section id="body">
-    </section>
-  
+
+    <div id="sec_info">
+        <div class="div_info" id="imagen_div">
+        </div>
+        <div class="div_info" id="info_p">
+            <p id="pasion">PASIÓN POR LA COCINA</p>
+            <p id="pasion_p">En Recetas tenemos el compromiso de proporcionar sencillas maneras de preparar tu comida de la forma más deliciosa y divertida posible. Nada menos. Utilizamos solo los ingredientes más exquisitos, ya sea en los gustos que más te agraden, como: comida rápida, postres, bar, vegana, entre muchas otras.</p>
+        </div>
+    </div>
+
+    <div id="sub_parallax"></div>
+
+    <form action="Registro.php" method="post" id="final">
+        <p>Recibe las novedades y recetas de nuestros cocineros en tu email </p>
+        <div>
+            <label for="nombre"></label>
+            <input type="text" placeholder="Escribe tu nombre" name="nombre">
+        </div>
+        <div>
+            <label for="correo"></label>
+            <input type="email" placeholder="Dirección de email" name="correo">
+        </div>
+        
+        <div>
+            <label for="comentario"></label>
+            <input type="text" placeholder="Escribe un comentario" name="comentario">
+        </div>
+        <!--
+        <div>
+                <label for="comentario"></label>
+                <textarea name="comentario" placeholder="Escribe un comentario" id="comentario" cols="40" rows="5"></textarea>
+            </div>--> 
+        <div>
+            <input type="submit" name="enviar" value="Suscribirse" id="boton">
+        </div>
+    </form>
+        <div id="social">
+                 <a href="https://www.facebook.com/"target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                 <a href="https://twitter.com/"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                 <a href="https://www.instagram.com/"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <p id="derechos">© 2023 hecho para Recetas</p>
+         </div>
+        
     <script src="js/script.js"></script>
 </body>
 </html>
